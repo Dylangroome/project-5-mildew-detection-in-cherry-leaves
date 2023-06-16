@@ -4,23 +4,19 @@ import matplotlib.pyplot as plt
 
 def page_summary_body():
 
-    st.write("### Project Hypothesis and Validation")
+    st.write("### Quick Project Summary")
 
     st.info(
         f"**General Information**\n"
-        f"* Malaria is a parasitic infection transmitted by the bite of infected female "
-        f"Anopheles mosquitoes.\n"
-        f"* A blood smear sample is collected, mixed with a reagent and examined in "
-        f"the microscope. Visual criteria are used to detect malaria parasites.\n"
-        f"* According to [WHO](https://www.who.int/news-room/fact-sheets/detail/malaria), "
-        f"in 2019, there were an estimated  229 million cases of malaria worldwide and an "
-        f"estimated 409 thousand deaths due to this disease. "
-        f"Children <5 years are the most vulnerable group, accounting for 67% (274 thousand) "
-        f"of all malaria deaths worldwide in 2019.\n\n"
+        f"* Powdery mildew is a fungal disease that affects many plant species.\n "
+        f"* An employee takes a few samples of tree leaves and verifying visually if the "
+        f"leaf tree is healthy or has powdery mildew. If there is powdery mildew, the "
+        f"employee applies a specific compound to kill the fungus. The time spent applying "
+        f"this compound is 1 minute.\n\n"
         f"**Project Dataset**\n"
-        f"* The available dataset contains 5643 out of +27 thousand images taken from "
-        f"blood smear workflow (when a drop of blood is taken on a glass slide) of "
-        f"malaria-parasitised and uninfected cells.")
+        f"* The dataset contains +4 thousand images taken from the  "
+        f"client's crop fields. The images show healthy cherry leaves and cherry leaves "
+        f"that have powdery mildew.")
 
     st.write(
         f"* For additional information, please visit and **read** the "
