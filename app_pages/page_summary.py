@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def page_summary_body():
 
-    st.write("### Quick Project Summary")
+    st.write("### Project Hypothesis and Validation")
 
     st.info(
         f"**General Information**\n"
