@@ -10,11 +10,11 @@ import itertools
 import random
 
 
-def page_cells_visualizer_body():
-    st.write("### Cells Visualizer")
+def page_leaf_visualizer_body():
+    st.write("### Leaf Visualizer")
     st.info(
         f"* The client is interested in having a study that visually "
-        f"differentiates a parasitised from an uninfected cell.")
+        f"differentiates a powdery mildew from a healthy cherry leaf.")
 
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -29,12 +29,11 @@ def page_cells_visualizer_body():
             f"However, a small difference in the colour pigment of the average images is seen for both labels.")
 
         st.image(avg_powdery_mildew,
-                 caption='Parasitised Cell - Average and Variability')
-        st.image(avg_healthy,
-                 caption='Uninfected Cell - Average and Variability')
-        st.write("---")
+                 caption='Powedery mildew leaf - Average and Variability')
+        st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
+    st.write("---")
 
-    if st.checkbox("Differences between average parasitised and average uninfected cells"):
+    if st.checkbox("Differences between average powdery mildew and average healthy leaves"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
@@ -45,7 +44,7 @@ def page_cells_visualizer_body():
 
     if st.checkbox("Image Montage"):
         st.write("* To refresh the montage, click on the 'Create Montage' button")
-        my_data_dir = 'inputs/cherry_leaves_dataset/cherry_leaves'
+        my_data_dir = 'inputs/cherry-leaves-dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(
             label="Select label", options=labels, index=0)
@@ -57,7 +56,7 @@ def page_cells_visualizer_body():
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
-    sns.set_style("white")
+    sns.set_style("dark")
     labels = os.listdir(dir_path)
 
     # subset the class you are interested to display
@@ -73,7 +72,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
                 f"Decrease nrows or ncols to create your montage. \n"
                 f"There are {len(images_list)} in your subset. "
                 f"You requested a montage with {nrows * ncols} spaces")
-            return
+        return
 
         # create list of axes indices based on nrows and ncols
         list_rows = range(0, nrows)
@@ -90,10 +89,10 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
                 f"Width {img_shape[1]}px x Height {img_shape[0]}px")
             axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
             axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
-        plt.tight_layout()
+            plt.tight_layout()
 
-        st.pyplot(fig=fig)
-        # plt.show()
+            st.pyplot(fig=fig)
+            # plt.show()
 
     else:
         print("The label you selected doesn't exist.")
