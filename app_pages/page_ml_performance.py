@@ -13,7 +13,7 @@ def page_ml_performance_metrics():
     labels_distribution = plt.imread(
         f"outputs/{version}/labels_distribution.png")
     labels_distribution_pie = plt.imread(
-        f"outputs/{version}/labels_distribution_pie.png")
+        f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution,
              caption='Labels Distribution on Train, Validation and Test Sets')
     st.image(labels_distribution_pie,
