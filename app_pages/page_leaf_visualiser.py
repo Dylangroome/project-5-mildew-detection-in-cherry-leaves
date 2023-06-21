@@ -56,7 +56,7 @@ def page_leaf_visualizer_body():
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
-    sns.set_style("dark")
+    sns.set_style("white")
     labels = os.listdir(dir_path)
 
     # subset the class you are interested to display
@@ -72,7 +72,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
                 f"Decrease nrows or ncols to create your montage. \n"
                 f"There are {len(images_list)} in your subset. "
                 f"You requested a montage with {nrows * ncols} spaces")
-        return
+            return
 
         # create list of axes indices based on nrows and ncols
         list_rows = range(0, nrows)
@@ -89,10 +89,10 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
                 f"Width {img_shape[1]}px x Height {img_shape[0]}px")
             axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
             axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
-            plt.tight_layout()
+        plt.tight_layout()
 
-            st.pyplot(fig=fig)
-            # plt.show()
+        st.pyplot(fig=fig)
+        # plt.show()
 
     else:
         print("The label you selected doesn't exist.")
