@@ -1,4 +1,5 @@
 *.zip
+*.png
 inputs/cherry_leaves_dataset/cherry_leaves/train/healthy
 inputs/cherry_leaves_dataset/cherry_leaves/train/powdery_mildew
 inputs/cherry_leaves_dataset/cherry_leaves/test/healthy

@@ -16,8 +16,6 @@ def page_ml_performance_metrics():
         f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution,
              caption='Labels Distribution on Train, Validation and Test Sets')
-    st.image(labels_distribution_pie,
-             caption='Labels Distribution on Train, Validation and Test Sets')
     st.write("---")
 
     st.write("### Model History")
