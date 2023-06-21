@@ -16,3 +16,4 @@ node_modules/
 .github/
 cloudinary_python.txt
 devcontainer/build-assets/jupyter_notebook_config.py
+devcontainer/build-assets/custom.js
