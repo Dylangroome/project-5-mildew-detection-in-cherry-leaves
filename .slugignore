@@ -15,9 +15,9 @@ jupyter_notebooks
 node_modules/
 .github/
 cloudinary_python.txt
-devcontainer/*
+.devcontainer
 /test
 /spec
 /docs
 README.md
-*.heroku
+.heroku
