@@ -49,10 +49,54 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 * The training data to fit the model has been provided by the client. Over 4000 images taken of their crop fields.
    * Train data - target: has mildew or not; features: all images.
+
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 1: Quick Project Summary
+* Quick project summary
+	* General Information
+		* Powdery mildew is a fungal disease that affects many plant species. 
+		* An employee takes a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.
+	* Project Dataset.
+		* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew.
+	* Business requirements
+		* The company is concerned about supplying the market with a compromised quality product.
+		*  The company needs a faster more scalable option to check its thousands of trees. A ML system to detect an infected leaf would speed up the process
+
+### Page 2: Leaf Visualizer
+* It will answer business requirement 1
+	* Checkbox 1 - Difference between average and variability image
+	* Checkbox 2 - Differences between average healthy and average infected leaf
+	* Checkbox 3 - Image Montage
+
+### Page 3: Powdery Mildew detector
+* Business requirement 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+* Link to download a set of infected and uninfected leaf images for live prediction.
+* User Interface with a file uploader widget. The user should upload multiple leaf images. It will display the image and a prediction statement, indicating if the leaf is infected or not with powdery mildew and the probability associated with this statement. 
+* Table with the image name and prediction results.
+* Download button to download table.
+
+### Page 4: Project Hypothesis and Validation
+* We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
+  * An average image study can help to investigate it
+
+### Page 5: ML Performance Metrics
+* Label Frequencies for Train, Validation and Test Sets
+* Model History - Accuracy and Losses
+* Model evaluation result
+
+## Testing
+
+Manual Testing was used to test the functionality of the steamlit site:
+
+- Each page opens correctly
+- All buttons on each page navigates correctly and takes the user to the correct page
+- All buttons on the Leaf Visualiser page works, displaying the correct information when clicked on, then hides the information when clicked on again
+- The image montage correctly displays either healthy or unhealthy leaves depending on what the user clicks
+- User can upload an image with no issues
+- The detector correctly displays whether the leaf is healthy or not, and provides a probabality with this
+- The analysis report correctly displays 
+- The page is still viewable on different screen sizes
 
 ## Unfixed Bugs
 
