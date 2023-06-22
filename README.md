@@ -14,7 +14,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+1 - We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
+  * An average image study can validate this by looking at dominant features and comparing the variation between images.
+
+2 - We believe we can predict if a leaf is healthy or not based on images of the leaf to a 97% degree of accuracy
+  * Train and valididate a model using Convolutional neural Network (CNN) to achieve a model that achieves the required level of accuracy. 
+  * Data will be split into test, train and validation sets to complete this. 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
