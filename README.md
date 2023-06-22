@@ -120,7 +120,18 @@ Manual Testing was used to test the functionality of the steamlit site:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+Python 3.8.12 - Used in the kernals to run the Jupyter Notebooks
+Jupyter Notebooks - Where all the code was run from to collect the data, visulaise and create the model
+GitHub - Used to host and deploy the website
+Gitpod - Used to create the code for the site
+Heroku - Used to deploy the website
+NumPy 1.19.2
+Pandas 1.1.2
+Matplotlib 3.3.1
+Seaborn 0.11.0
+Plotly 4.12.0
+Streamlit 0.85.0
+Tensorflow 2.6.0
 
 ## Credits
 
