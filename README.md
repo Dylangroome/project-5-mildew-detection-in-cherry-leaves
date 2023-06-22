@@ -120,19 +120,21 @@ Manual Testing was used to test the functionality of the steamlit site:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-Python 3.8.12 - Used in the kernals to run the Jupyter Notebooks
-Jupyter Notebooks - Where all the code was run from to collect the data, visulaise and create the model
-GitHub - Used to host and deploy the website
-Gitpod - Used to create the code for the site
-Heroku - Used to deploy the website
-NumPy 1.19.2
-Pandas 1.1.2
-Matplotlib 3.3.1
-Seaborn 0.11.0
-Plotly 4.12.0
-Streamlit 0.85.0
-Tensorflow 2.6.0
-
+* numpy: Used to load images into an array to plot an average and variablity plot on it.
+* pandas: Used for data cleaning, manipulating and analysis.
+* matplotlib: utilized to create plots.
+* seaborn: Used to visualize data.
+* plotly: Creates interactive visualizations of data.
+* streamlit: Used to create the dashboard for the project.
+* scikit-learn: used to implement the machine learning model.
+* tensorflow: Used to create the ML model
+* keras: Used to create the ML model
+### Technologies
+* Python - programming language
+* Heroku - used to host and deploy the project
+* Kaggle - source for the Dataset
+* CodeAnywhere - IDE
+* Jupyter Notebook - used to illustrate the creation of the project
 ## Credits
 
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
