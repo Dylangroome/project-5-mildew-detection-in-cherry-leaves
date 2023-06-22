@@ -137,20 +137,18 @@ Manual Testing was used to test the functionality of the steamlit site:
 * Jupyter Notebook - used to illustrate the creation of the project
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
+- Code from walkthrough project in predictive analytics was used from this [Repository] (https://github.com/Linber93/WalkthroughProject01)
+- 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- Cherry leaves dataset taken from Kaggle - https://www.kaggle.com/datasets/codeinstitute/cherry-leavese
+- Instructions on how to complete this project was based on Walkthrough 1 from The Code Institute
+- This Github template was provided by The Code Institute -
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- Images used in the project were provided by the client
 
 ## Acknowledgements (optional)
 
-- Thank the people that provided support throughout this project.
+* The Code Institute for providing the github template used to complete this project as well as the walkthroughs and tutorials whihc provided the knowledge needed to complete this project
