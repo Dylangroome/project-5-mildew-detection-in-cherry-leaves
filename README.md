@@ -23,12 +23,32 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* **Business Requirement 1**: Visually differentiate a healthy cherry leaf from one with powdery mildew (Data Visualisation).
+	* We will display the "mean" and "standard deviation" images for healthy and unhealthy cherry trees.
+ 	* We will display the difference between an average healthy leaf and an average powdery mildew leaf.
+	* We will display an image montage for either a healthy leaf or a powdery mildew leaf.
+
+* **Business Requirement 2**:  Predicting if a cherry leaf is healthy or contains powdery mildew (Classification).
+	* We want to predict if a cherry leaf is healthy or contains powdery mildew. 
+	* We want to build a binary classifier and generate reports.
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
 
+* To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
+
+* We will need an ML model to predict if a cherry leaf has powdery mildew or not, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
+
+* Our desired outcome is to provide Farmy & Foods with a more efficient method for detecting powdery mildew on cherry leaves.
+
+* The model success metrics are:
+   * We agreed with the client that 97% accuracy would be our target for success.
+
+* The model output is defined as a flag, indicating if the cherry leaf has powdery mildew or not and the associated probability of having mildew or not. The plantation staff will upload the picture to the App. The prediction is made on the fly (not in batches).
+
+* The training data to fit the model has been provided by the client. Over 4000 images taken of their crop fields.
+   * Train data - target: has mildew or not; features: all images.
 ## Dashboard Design
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
