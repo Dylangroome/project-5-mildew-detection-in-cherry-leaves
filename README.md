@@ -100,7 +100,8 @@ Manual Testing was used to test the functionality of the steamlit site:
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- First bug was with deployment. I have had to change the heroku stack from 22 to 20 in order to support python 3.8.12
+- Second bug was with deployment. I have had to mannualy delete some img files from the validation input set for the image montage, this was beacause heroku slug size is 500 max. With out manualy deleteing these files it would not deploy. i used tutor support but was not sourced any working solution, this was my only working option i could find as i tried other methods like a .slugignore file and cache purge.
 
 ## Deployment
 
